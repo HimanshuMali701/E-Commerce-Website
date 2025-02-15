@@ -1,16 +1,19 @@
 {
+  "homepage": "https://HimanshuMali701./github.io/E-Commerce-website",
   "name": "e-commerce-himanshu-apparel-store",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5"
